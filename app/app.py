@@ -20,7 +20,8 @@ except Exception as ex:
 def index():
     return 'Hello world!'
 
-@app.route("/loogin")
+""" changed /loogin to /login """
+@app.route("/login")
 def login():
     return redirect(AUTH_URL, code=302)
 
